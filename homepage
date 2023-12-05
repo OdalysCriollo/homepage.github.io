@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página de Inicio</h1>
+    </header>
+
+    <section>
+        <h2>Bienvenido a mi página de inicio</h2>
+        <p>Esta es una página simple de inicio con HTML y JavaScript.</p>
+        <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+        <p id="mensaje"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mi Página de Inicio</p>
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').innerHTML = '¡Hola! ¡Gracias por visitar mi página de inicio!';
+        }
+    </script>
+</body>
+</html>
